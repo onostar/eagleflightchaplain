@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Eagle floght chaplain</name>
+
+  <description>
+      Eagle Flight Chaplain is a Christian Organisation that engages in reaching out to students in schools, prisoners in the prison/correctional centers, reaching out to the sick in hospitals and praying for them, as well as reaching out to the public through Crusades in cities and villages.
+  </description>
+
+  <author href="https://onostarmedia.com.ng" email="support@onostarmedia.com.ng">
+      Onostar Media
+  </author>
+  
+  <icon src="images/eagle_flight_chaplain_logo.png" />
+</widget>
