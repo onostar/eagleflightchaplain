@@ -286,6 +286,9 @@ main{
 .admin_main .main_menu .login{
     display:none;
 }
+#mobile_menu{
+    display:none;
+}
 .admin_main aside nav{
     display:flex;
     flex-direction:column;
@@ -1054,9 +1057,9 @@ main{
     flex-wrap: wrap;
 }
 .gallery figure{
-    position:relative;
+    /* position:relative; */
     width:18%;
-    max-height:200px;
+    /* max-height:200px; */
     box-shadow: 2px 2px 2px #c4c4c4;
     margin:10px;
     /* transform:scale(1); */

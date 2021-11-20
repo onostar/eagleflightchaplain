@@ -87,7 +87,7 @@ function hideNav(){
         })*/
     } 
 };
-hideNav();
+// hideNav();
 //display call contact form
 function displayContactForm(){
     if(document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200){

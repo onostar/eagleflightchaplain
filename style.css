@@ -11,7 +11,6 @@ body{
     line-height:1.5;
     font-family: 'Poppins', 'Open Sans';
     background:hsl(0, 0%, 97%);
-    width:100%;
 }
 a{
     color:greenyellow;
@@ -583,11 +582,11 @@ h2{
     width:100%;
     height:100%;
 }
-.call-to-action .in-house-text h2{
+.call-to-action .in-house-text h2, .recent_text h2{
     font-size:1.8rem;
     color:#fff;
 }
-.call-to-action .in-house-text h3{
+.call-to-action .in-house-text h3, .recent_text h3{
     font-family:'Open Sans';
     font-weight:800;
     font-size:2rem;
@@ -596,17 +595,17 @@ h2{
     letter-spacing: 4px;
     margin:10px 0;
 }
-.call-to-action .in-house-text button{
+.call-to-action .in-house-text button, .recent_text button{
     border:2px solid #fff;
     background:transparent;
     padding:10px 20px;
     border-radius:0;
     text-transform: uppercase;
 }
-.call-to-action .in-house-text button:hover, .call-to-action .in-house-text button:focus{
+.call-to-action .in-house-text button:hover, .call-to-action .in-house-text button:focus, .recent_text button:hover, .recent_text button:focus{
     background:green;
     color:#fff;
-    border-color:yellowgreen;
+    /* border-color:yellowgreen; */
     transform:scale(1);
 }
 .clientsPhotos .clients{
@@ -1331,6 +1330,31 @@ footer .copy-right{
     font-size:1.1rem;
     color:rgb(141, 82, 40);
 }
+.recent_event{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    max-height:300px;
+    margin:30px auto;
+}
+.recent_event .recent_img{
+    width:48%;
+    height:100%;
+}
+.recent_event .recent_img img{
+    width:100%;
+    height:100%;
+}
+.recent_text{
+    width:51%;
+    height:auto;
+    text-align:center;
+    background:#000;
+    color:#fff;
+    padding:10px;
+}
+
 @media screen and (max-width: 800px){
     .main-head{
         justify-content: space-between;
@@ -1508,7 +1532,17 @@ footer .copy-right{
     .call-to-action .in-house-text h2{
         font-size:1.7rem;
     }
-    
+    .recent_event{
+        height:auto;
+        margin:50px auto;
+    }
+    .recent_event .recent_img{
+        width:100%;
+        height:300px;
+    }
+    .recent_text{
+        width:100%;
+    }
 }    
 @media screen and (max-width: 600px){
     .featuredCousines{

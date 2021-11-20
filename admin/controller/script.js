@@ -1,12 +1,13 @@
 /* display mobile menu */
 $(document).ready(function(){
     $(".menu_icon").click(function(){
-        $("aside").toggle();
+        $("#mobile_menu").toggle();
     });
-    // $("#contents").click(function(){
-    //     $("aside").hide();
+    $("#contents").click(function(){
+        $("#mobile_menu").hide();
         
-    // })
+    })
+    
 })
 /* display volunteers */
 $(document).ready(function(){

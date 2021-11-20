@@ -108,6 +108,31 @@
                 </div>
             </div>
         </section>
+        <!-- Recent event -->
+        <section class="recent_event">
+            
+            <?php
+                $recent_event = $connectdb->prepare("SELECT SUBSTRING_INDEX(details, ' ', 40) AS details, title, event_date, event_status, event_id, photo FROM events WHERE event_date < CURDATE() ORDER BY event_date ASC LIMIT 1");
+                $recent_event->execute();
+                if(!$recent_event->rowCount() > 0){
+                    echo "<p class='no_result'>No record found!</p>";
+                }else{
+                $recents = $recent_event->fetchAll();
+                foreach($recents as $recent):
+            ?>
+            
+            <div class="recent_text">
+                <h2>Recent Event</h2>
+                <h3><?php echo $recent->title;?></h3>
+                <p><?php echo $recent->details;?></p>
+                <a href="javascript:void()" onclick="showEvent('<?php echo $recent->event_id?>')"><button>View details</button></a>
+                
+            </div>
+            <div class="recent_img">
+                <img src="<?php echo 'media/'. $recent->photo?>" alt="recent event">
+            </div>
+            <?php endforeach; }?>
+        </section>
         <!-- activities and causes -->
         <section class="featured" id="causes">
             <h2 class="text-center">Our Causes</h2>
@@ -189,6 +214,7 @@
             <?php endforeach; }?>
         </section>
     </main>
+    <!-- call to action -->
     <section class="call-to-action">
         <img src="images/littleboy_with_water.jpg" alt="rendering help">
         <div class="in-house-text">

@@ -93,6 +93,33 @@
                 </ul>
             </nav>
         </aside>
+        <aside class="main_menu" id="mobile_menu">
+            <div class="login">
+                <button id="loginDiv"><i class="far fa-user"></i> 
+                     Hello Admin
+                    <i class="fas fa-chevron-down"></i></button>
+                <div class="login_option" id="account">
+                    <div>
+                        <a href="javascript:void(0);" class="signupBtn">Change password</a>
+                
+                        <button id="logoutBtn"><a href="logout.php">Logout</a></button>
+                        
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <h3><a href="admin.php" title="Home"><i class="fas fa-user"></i> Admin</a></h3>
+                <ul>
+                    
+                    <li><a href="javascript:void(0);" id="addMenu" title="Add updates and stories" class="page_navs" data-page="addItems">Post Events <i class="fas fa-newspaper"></i></a></li>
+                    <li><a href="javascript:void(0);" id="deleteItem" title="Delete stories" class="page_navs" data-page="deleteItems">Delete Events <i class="fas fa-trash"></i></a></li>
+                    <li><a id="showUsers" href="javascript:void(0);" class="page_navs" data-page="userList">Event List <i class="fas fa-blog"></i></a></li>
+                    <li><a href="javascript:void(0);" id="addStore" class="page_navs" data-page="addRestaurant" class="page_navs">Upload Media <i class="fas fa-photo-video"></i></a></li>
+                    <li><a href="javascript:void(0);" id="addMedia" class="page_navs" data-page="mediaList" class="page_navs">View Gallery <i class="fas fa-photo-video"></i></a></li>
+                    <li><a id="subscriberList"  href="javascript:void(0);" class="page_navs" data-page="subscribers">Volunteers <i class="fas fa-users"></i></a></li>
+                </ul>
+            </nav>
+        </aside>
         
         
         <section id="contents">

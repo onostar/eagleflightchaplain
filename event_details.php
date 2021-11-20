@@ -78,7 +78,8 @@
                         <?php 
                             // $today_date = new Date();
                             if(date("Y-m-d") > date("Y-m-d", strtotime($view->event_date))){
-                                echo "<p class='completed'><i class='fas fa-flag'></i> This Event has been completed</p>";
+                                echo "<p class='completed'><i class='fas fa-flag'></i> This Event has been completed</p>
+                                <a href='gallery.php' style='background:green; color:#fff; padding:10px;'>View photos</a>";
                             }else{
                                 echo "<a href='volunteer.php'><button class='btn btn-success' style='background:green;'>Volunteer</button></a>";
                                 
